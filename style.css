@@ -133,10 +133,7 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
-}
-.social-icons, .btn-group {
-    margin-top: 2rem;
-}
+}  
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -154,7 +151,7 @@ span{
 .social-icons a:hover{
     background: var(--main-color);
     color: var(--text-color);
-    transform: scale(1.3);
+    transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--main-color);
 }
 .btn{
@@ -165,6 +162,7 @@ span{
     border-radius: 4rem;
     font-size: 1.6rem;
     color: black;
+    border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -266,4 +264,99 @@ span{
     85%{
         width: calc(100% + 8px);
     }
+}
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education{
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: var(--main-color);
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding: calc(50% +30px);
+    text-align: left;
+}
+.timeline-item:nth-child(even){
+    padding: calc(50% +30px);
+}
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 10px;
+    border-radius: 50%;
+}
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+.timeline-content{
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.timeline-content h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+.timeline-content p{
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-color);
+    width: 50px;
 }
