@@ -99,12 +99,12 @@ span{
 .logo span{
     color: var(--main-color);
 }
-.home-conent h3{
+.home-content h3{
     font-size: 3.5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-.home-conent h1{
+.home-content h1{
     font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
@@ -176,7 +176,7 @@ span{
     gap: 1.5rem;
     align-items: center;
 }
-.btn-goup a:nth-of-type(2){
+.btn-group a:nth-of-type(2){
     background-color: black;
     color: var(--main-color);
     border: 2px solid var(--main-color);
@@ -219,23 +219,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Actress";
+        content: "Atriz";
     }
     21%,
     40%{
-        content: "Director";
+        content: "Diretora";
     }
     41%,
     60%{
-        content: "Writer";
+        content: "Performer";
     }
     61%,
     80%{
-        content: "Model";
+        content: "Modelo";
     }
     81%,
     100%{
-        content: "Teacher";
+        content: "Escritora";
     }
 
 }
