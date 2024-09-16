@@ -410,4 +410,27 @@ span{
     line-height: 1.7;
     margin: auto;
 }
-
+.projects{
+    background-color: var(--second-bg-color);
+}
+.projects-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projects-heading{
+    margin-bottom: 5rem;
+}
+.projects-box img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
