@@ -1,3 +1,8 @@
+
+/*
+//////////// GLOBAL STYLES
+*/
+
 * {
     margin:0;
     padding:0;
@@ -14,12 +19,10 @@
     --text-color: white;
     --main-color: #B7410E;
 }
-
 html{
     font-size: 60%;
     overflow-x:hidden;
 }
-
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -37,6 +40,11 @@ body{
     align-items: center;
     z-index: 5;
 }
+
+/*
+//////////// NAVBAR
+*/
+
 .logo{
     font-size: 3rem;
     color: var(--main-color);
@@ -68,6 +76,10 @@ body{
     color: var(--main-color);
     display: none;
 }
+
+/*
+//////////// HOME
+*/
 
 section{
     min-height: 100vh;
@@ -126,7 +138,12 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
-}  
+}
+
+/*
+//////////// SOCIAL ICONS
+*/
+
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -147,6 +164,11 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
+
+/*
+//////////// BUTTONS
+*/
+
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -181,6 +203,11 @@ span{
     background-color: var(--main-color);
     color: black;
 }
+
+/*
+//////////// TEXT ANIMATION
+*/
+
 .text-animation{
     font-size: 34px;
     font-weight: 600;
@@ -258,11 +285,21 @@ span{
         width: calc(100% + 8px);
     }
 }
+
+/*
+//////////// ABOUT
+*/
+
 .heading{
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
 }
+
+/*
+//////////// EDUCATION
+*/
+
 .education{
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -343,6 +380,10 @@ span{
     line-height: 22px;
 }
 
+/*
+//////////// SCROLLBAR
+*/
+
 ::-webkit-scrollbar{
     width: 13px;
 }
@@ -353,6 +394,10 @@ span{
     background: var(--bg-color);
     width: 50px;
 }
+
+/*
+//////////// SKILLS
+*/
 
 .skills{
     background-color: var(--bg-color);
@@ -403,6 +448,11 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+
+/*
+//////////// PROJECTS
+*/
+
 .projects{
     background-color: var(--second-bg-color);
 }
@@ -456,6 +506,11 @@ span{
 .projects-item p{
     font-size: 1.3rem;
 }
+
+/*
+//////////// CONTACT
+*/
+
 .contact{
     background-color: var(--bg-color);
 }
@@ -482,7 +537,7 @@ span{
     padding: 2.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
-    background-color: var(--second-bg-color);
+    background: var(--second-bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
@@ -491,6 +546,11 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+
+/*
+//////////// FOOTER
+*/
+
 .footer{
     position: relative;
     bottom: 0;
@@ -517,9 +577,9 @@ span{
     transition: 0.3s ease-in-out;
 }
 .footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
     background-color: var(--main-color);
     color: black;
-    transform: scale(1.2)translateY(-10px);
     box-shadow: 0 0 25px var(--main-color);
 }
 .footer ul{
@@ -535,7 +595,7 @@ span{
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
-.footer ul li a :hover{
+.footer ul li a:hover{
     border-bottom: 3px solid var(--main-color);
 }
 .footer ul li{
@@ -543,11 +603,15 @@ span{
     padding: 0 15px;
 }
 .footer .copyrigth{
+    margin-top: 50px;
     text-align: center;
-    margin-top: 50px;
+    font-size: 16px;
     color: white;
-    margin-top: 50px;
 }
+
+/*
+//////////// RESPONSIVE
+*/
 
 @media(max-width:1285px){
     html{
@@ -565,6 +629,9 @@ span{
     }
     section{
         padding: 10rem 3% 2rem;
+    }
+    .timeline-items::before{
+        left: 7px;
     }
     .timeline-item:nth-child(odd){
         padding-right: 0;
@@ -590,6 +657,7 @@ span{
         padding: 2rem 3%;
     }
 }
+
 @media(max-width:895px){
     #menu-icon{
         display: block;
@@ -601,6 +669,7 @@ span{
         width: 50%;
         padding: 1rem 3%;
         background: rgba(0, 0, 0 0.8);
+        backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
