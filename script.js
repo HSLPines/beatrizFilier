@@ -1,3 +1,4 @@
+
 let menuIcon = document.querySelector('#btn-menu');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
